@@ -15,17 +15,28 @@ O projeto conta com um Makefile e roda em um container do Docker. Então o princ
 ## Comandos
 
 - up: 
+
   Rode `make up` para criar o container e começar a rodá-lo.
 
 - down: 
+
   Rode `make down` para distruir o container e seus dados.
 
-- run $SCRIPT
+- run $SCRIPT:
+
   rode `make run script=NOME_DO_SCRIPT` para rodar o script localizado em `scripts/NOME_DO_SCRIPT.sql` dentro do container
 
 ## Scripts
 
-- genertate_schema: cria o schema do banco. Deve ser rodado primeiro, antes de rodar qualquer outro comando.
-- seed: para povoar as principais tabelas do banco com dados.
-- test_queries: executa consultas de teste para avaliar consistência do banco.
-- data_modifications: executa operações de UPDATE e DELETE no banco.
+- genertate_schema: 
+
+  cria o schema do banco. Deve ser rodado primeiro, antes de rodar qualquer outro comando.
+- seed: 
+
+  para povoar as principais tabelas do banco com dados.
+- test_queries: 
+
+  executa consultas de teste para avaliar consistência do banco.
+- data_modifications: 
+
+  executa operações de UPDATE e DELETE no banco.
