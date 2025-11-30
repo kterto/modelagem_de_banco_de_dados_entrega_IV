@@ -8,6 +8,8 @@ registrar suas execuções com fotos ou vídeos. O sistema também oferece um mo
 de acompanhamento de execução, guiando o usuário por cada etapa da receita com
 descrições e cronômetros integrados.
 
+github https://github.com/kterto/modelagem_de_banco_de_dados_entrega_IV
+
 ## Setup 
 
 O projeto conta com um Makefile e roda em um container do Docker. Então o principal requisito seria ter o Docker instalado na máquina e o `make` para conseguir rodar os comandos do `Makefile`. O setup mapeia o diretório `/scripts` para `/tmp/scripts/` dentro do container, isso facilita rodar os scripts diretamente dentro do container. Caso queira rodar manualmente o papel de cada script será definido mais adiante.
@@ -20,7 +22,7 @@ O projeto conta com um Makefile e roda em um container do Docker. Então o princ
 
 - down: 
 
-  Rode `make down` para distruir o container e seus dados.
+  Rode `make down` para destruir o container e seus dados.
 
 - run $SCRIPT:
 
